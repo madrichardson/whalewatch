@@ -1,21 +1,26 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "whalewatch"
+  title: "WhaleWatch"
   navbar:
-    left:
+    right:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: " "
+      - href: about.qmd
+        text: About WhaleWatch 2.0
+      - href: products.qmd
+        text: WhaleWatch 2.0 Products
+      - href: explorer.qmd
+        text: WhaleWatch 2.0 Explorer
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: lux
     css: styles.css
     toc: true
+    include-after-body: footer.html
 
 
 
